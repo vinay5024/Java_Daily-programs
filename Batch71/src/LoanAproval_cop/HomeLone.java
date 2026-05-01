@@ -1,6 +1,10 @@
 package LoanAproval_cop;
 
 public class HomeLone extends Loan {
+	@Override
+	double getROI() {
+		return 10.5;
+	}
 
 	static boolean isEligiblePropertyValue() {
 	    System.out.println("Enter property value: ");
@@ -19,7 +23,7 @@ public class HomeLone extends Loan {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Welcome to smart Loan Aproval");
-		Loan l = new Loan();
+		Loan l = new HomeLone();
 		String cname=l.getCustomername();
 		int cibil=l.getCustomerCibil();
 		int age=l.getCustomerAge();
