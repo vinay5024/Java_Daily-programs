@@ -16,10 +16,7 @@ public class Login_System {
 		}
 		else {
 			System.out.println("invalid login");
-		}
-		
-		
-		
+		}	
 
 	}
 
